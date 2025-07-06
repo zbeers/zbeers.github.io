@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2c3e50',
+                        secondary: '#3498db',
+                        accent: '#667eea'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-800 leading-relaxed">
+    <!-- Header -->
+    <header class="bg-primary text-white py-4 fixed w-full top-0 z-50 shadow-lg">
+        <nav class="max-w-6xl mx-auto px-8 flex justify-between items-center">
+            <div class="text-2xl font-bold">Your Name</div>
+            <ul class="flex space-x-8">
+                <li><a href="#home" class="hover:text-secondary transition-colors duration-300">Home</a></li>
+                <li><a href="#about" class="hover:text-secondary transition-colors duration-300">About</a></li>
+                <li><a href="#skills" class="hover:text-secondary transition-colors duration-300">Skills</a></li>
+                <li><a href="#projects" class="hover:text-secondary transition-colors duration-300">Projects</a></li>
+                <li><a href="#contact" class="hover:text-secondary transition-colors duration-300">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-gradient-to-br from-accent to-purple-600 text-white text-center py-32 px-8 min-h-screen flex flex-col justify-center">
+        <div class="max-w-4xl mx-auto">
+            <div class="flex flex-col items-center mb-8">
+                <img src="PFP.jpeg" alt="Zachary Beers" class="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover object-top border-4 border-white shadow-2xl mb-6">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6">Welcome to My Portfolio</h1>
+            </div>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Hello! I'm a passionate data scientist and software developer. I love turning complex data into meaningful insights and building innovative solutions.</p>
+            <p class="text-lg md:text-xl">Explore my work and get to know me better!</p>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-16 px-8 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-primary">About Me</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <p class="text-lg leading-relaxed">I'm a dedicated professional with a strong passion for data science and technology. With experience in machine learning, statistical analysis, and software development, I enjoy solving complex problems and creating impactful solutions.</p>
+                    <p class="text-lg leading-relaxed">My journey in data science began with curiosity about how data can tell stories and drive decisions. Today, I work with various tools and technologies to extract insights from data and build intelligent systems.</p>
+                    <p class="text-lg leading-relaxed">When I'm not coding or analyzing data, you can find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the community.</p>
+                </div>
+                <div class="space-y-6">
+                    <p class="text-lg leading-relaxed">I believe in continuous learning and staying updated with the latest trends in data science and technology. My goal is to make a positive impact through data-driven solutions and innovative applications.</p>
+                    <p class="text-lg leading-relaxed">I'm always excited to collaborate on interesting projects and connect with fellow data enthusiasts and developers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 px-8">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-primary">Data Science Skills</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Programming Languages -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                    <h3 class="text-2xl font-bold mb-6 text-primary">Programming Languages</h3>
+                    <ul class="space-y-3">
+                        <li class="py-2 border-b border-gray-200 last:border-b-0">Python</li>
+                        <li class="py-2 border-b border-gray-200 last:border-b-0">R</li>
+                        <li class="py-2 border-b border-gray-200 last:border-b-0">SQL</li>
+                        <li class="py-2 border-b border-gray-200 last:border-b-0">JavaScript</li>
+                        <li class="py-2 border-b border-gray-200 last:border-b-0">Java</li>
+                    </ul>
+                </div>
+
+                <!-- Machine Learning -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                    <h3 class="text-2xl font-bold mb-6 text-primary">Machine Learning</h3>
+                    <ul class="space-y-3">
+                        <li class="py-2 border-b border-gray-200 last:border-b-0">Scikit-learn</li>
+                        <li class="py-2 border-b border-gray-200 last:border-b-0">TensorFlow</li>
+                        <li class="py-2 border-b border-gray-200 last:border-b-0">PyTorch</li>
+                        <li class="py-2 border-b border-gray-200 last:border-b-0">Keras</li>
+                        <li class="py-2 border-b border-gray-200 last:border-b-0">XGBoost</li>
+                    </ul>
+                </div>
+
+                <!-- Data Analysis -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                    <h3 class="text-2xl font-bold mb-6 text-primary">Data Analysis</h3>
+                    <ul class="space-y-3">
+                        <li class="py-2 border-b border-gray-200 last:border-b-0">Pandas</li>
+                        <li class="py-2 border-b border-gray-200 last:border-b-0">NumPy</li>
+                        <li class="py-2 border-b border-gray-200 last:border-b-0">Matplotlib</li>
+                        <li class="py-2 border-b border-gray-200 last:border-b-0">Seaborn</li>
+                        <li class="py-2 border-b border-gray-200 last:border-b-0">Plotly</li>
+                    </ul>
+                </div>
+
+                <!-- Big Data & Cloud -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                    <h3 class="text-2xl font-bold mb-6 text-primary">Big Data & Cloud</h3>
+                    <ul class="space-y-3">
+                        <li class="py-2 border-b border-gray-200 last:border-b-0">Apache Spark</li>
+                        <li class="py-2 border-b border-gray-200 last:border-b-0">Hadoop</li>
+                        <li class="py-2 border-b border-gray-200 last:border-b-0">AWS</li>
+                        <li class="py-2 border-b border-gray-200 last:border-b-0">Google Cloud</li>
+                        <li class="py-2 border-b border-gray-200 last:border-b-0">Azure</li>
+                    </ul>
+                </div>
+
+                <!-- Statistics & Mathematics -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                    <h3 class="text-2xl font-bold mb-6 text-primary">Statistics & Mathematics</h3>
+                    <ul class="space-y-3">
+                        <li class="py-2 border-b border-gray-200 last:border-b-0">Statistical Analysis</li>
+                        <li class="py-2 border-b border-gray-200 last:border-b-0">Hypothesis Testing</li>
+                        <li class="py-2 border-b border-gray-200 last:border-b-0">Regression Analysis</li>
+                        <li class="py-2 border-b border-gray-200 last:border-b-0">Time Series Analysis</li>
+                        <li class="py-2 border-b border-gray-200 last:border-b-0">Probability Theory</li>
+                    </ul>
+                </div>
+
+                <!-- Tools & Platforms -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                    <h3 class="text-2xl font-bold mb-6 text-primary">Tools & Platforms</h3>
+                    <ul class="space-y-3">
+                        <li class="py-2 border-b border-gray-200 last:border-b-0">Jupyter Notebooks</li>
+                        <li class="py-2 border-b border-gray-200 last:border-b-0">Git & GitHub</li>
+                        <li class="py-2 border-b border-gray-200 last:border-b-0">Docker</li>
+                        <li class="py-2 border-b border-gray-200 last:border-b-0">Tableau</li>
+                        <li class="py-2 border-b border-gray-200 last:border-b-0">Power BI</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 px-8 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-primary">My Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- Guessing Game -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mr-4">
+                            <span class="text-white font-bold text-xl">🎯</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary">Guessing Game</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">An interactive number guessing game built with JavaScript. Players guess a number between 1 and 100 with real-time feedback.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">JavaScript</span>
+                        <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">HTML</span>
+                        <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm font-medium">CSS</span>
+                    </div>
+                    <a href="Guessing-Game/index.html" target="_blank" class="inline-block bg-primary text-white px-6 py-2 rounded-lg hover:bg-secondary transition-colors duration-300">View Project</a>
+                </div>
+
+                <!-- Coffee Shop Menu -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center mr-4">
+                            <span class="text-white font-bold text-xl">☕</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary">Coffee Shop Menu</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">A stylish coffee shop menu showcasing drinks and snacks with modern CSS styling and responsive design.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">HTML</span>
+                        <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm font-medium">CSS</span>
+                    </div>
+                    <a href="Coffee-Shop-Menu/index.html" target="_blank" class="inline-block bg-primary text-white px-6 py-2 rounded-lg hover:bg-secondary transition-colors duration-300">View Project</a>
+                </div>
+
+                <!-- Unit Converter -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center mr-4">
+                            <span class="text-white font-bold text-xl">🔄</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary">Unit Converter</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">A practical unit converter that converts between miles and kilometers with a clean, user-friendly interface.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">JavaScript</span>
+                        <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">HTML</span>
+                        <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm font-medium">CSS</span>
+                    </div>
+                    <a href="Unit-Converter/index.html" target="_blank" class="inline-block bg-primary text-white px-6 py-2 rounded-lg hover:bg-secondary transition-colors duration-300">View Project</a>
+                </div>
+
+                <!-- Linktree -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center mr-4">
+                            <span class="text-white font-bold text-xl">🔗</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary">Personal Linktree</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">A personal link aggregation page showcasing social media links and portfolio information with clean design.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">HTML</span>
+                        <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm font-medium">CSS</span>
+                    </div>
+                    <a href="Linktree/index.html" target="_blank" class="inline-block bg-primary text-white px-6 py-2 rounded-lg hover:bg-secondary transition-colors duration-300">View Project</a>
+                </div>
+
+                <!-- Python Shell -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 border-yellow-400">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-yellow-500 rounded-lg flex items-center justify-center mr-4">
+                            <span class="text-white font-bold text-xl">🐍</span>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-primary">Python Shell Implementation</h3>
+                            <span class="inline-block px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium mt-2">In Progress</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">A POSIX-compliant shell implementation in Python featuring command parsing, built-in commands (cd, pwd, echo, type), and external program execution with proper argument handling and quote support.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">Python</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm font-medium">Shell</span>
+                        <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm font-medium">POSIX</span>
+                    </div>
+                    <a href="https://github.com/zbeers/codecrafters-shell-python" target="_blank" rel="noopener" class="inline-block bg-primary text-white px-6 py-2 rounded-lg hover:bg-secondary transition-colors duration-300">View Repository</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-8 bg-primary text-white text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold mb-8">Get In Touch</h2>
+            <p class="text-xl mb-8">Interested in working together? Let's connect!</p>
+            <div class="space-y-4 text-lg">
+                <p>Email: Zachary.Beers1@gmail.com</p>
+                <p>LinkedIn: https://www.linkedin.com/in/zachary-beers/</p>
+                <p>GitHub: https://github.com/zbeers</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Smooth scrolling script -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html> 
